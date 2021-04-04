@@ -1,0 +1,71 @@
+
+element{
+	/*Colors */
+	--main-bg-color : #0f1873;
+	--text-color-normal : black;
+	--text-color-primary : #0f1873;
+	--text-color-secondary:#00bcd4;
+	--heading-color-primary: #0f1873;
+	--title-color : black;
+	--title-color-hover : #0f1873;
+	--title-color-on-primary: white;
+
+	--footer-a-color:#7fffd4;
+
+	--footer-darkgray:#a9a9a9;
+
+	/*Font size*/
+
+}
+
+
+
+.page-top{
+	width: 100%;
+	position: inherit;
+	display: inline-flex;
+    height: -webkit-fill-available;
+    min-height: 500px;background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/back2.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.top-left{
+	width:50%;
+	align-self: center;
+}
+
+.top-left img{
+	width: 80%;
+	height:auto;
+	margin: 10%;
+}
+
+
+.top-left h2{
+	font-size: 100px;
+	font-family: sans-serif;
+	color: #fff;
+	text-shadow: 2px solid #aaa;
+}
+
+
+.top-left button{
+	font-size: 32px;
+	font-family: sans-serif;
+	color: var(--text-color-primary);
+	padding: 22px;
+	margin: 10px;
+	border: 1px solid #00bcd4;
+	border-bottom-right-radius: 18px;
+	border-top-left-radius: 18px;
+}
+
+
+/*-------------------- Media Screen MAX_WIDTH 600px ------------------*/
+@media only screen and (max-width: 600px){
+	.top-left{
+		width:100%;
+	}
+}

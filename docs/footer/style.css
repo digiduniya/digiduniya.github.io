@@ -1,0 +1,331 @@
+element{
+	/*Colors */
+	--main-bg-color : #0f1873;
+	--text-color-normal : black;
+	--text-color-primary : #0f1873;
+	--text-color-secondary:#00bcd4;
+	--heading-color-primary: #0f1873;
+	--title-color : black;
+	--title-color-hover : #0f1873;
+	--title-color-on-primary: white;
+
+	--footer-a-color:#7fffd4;
+
+	--footer-darkgray:#a9a9a9;
+
+	/*Font size*/
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+footer{
+	margin-top: 20px;
+	width: 100%;
+	overflow-x: hidden !important;
+	background-color: #20202f;
+	width: 100%;
+	margin: 0px;
+	position: relative;
+}
+
+footer a{
+ text-decoration: none;
+ color: #7fffd4;
+}
+
+footer a:hover{
+	color: #fff;
+}
+
+footer p{
+	color: #fff;
+	font-family: system-ui;
+}
+
+.footer-top{
+	width: 100%;
+	padding: 20px;
+	display: inline-flex;
+}
+
+.social{
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social .so-icon {
+	margin: 10px;
+	height: 40px;
+	width: 40px;
+	padding: 4px;
+	border-radius: 50px;
+	border: 1px solid white;
+	display: block;
+	justify-content: center;
+}
+
+.so-icon img{
+	width: 100%;
+	filter: invert(1);
+}
+
+.social .facebook{
+	background-color: #4267B2;
+}
+
+.social .instagram{
+	background-color: #DD2A7B;
+}
+.social .twitter{
+	background-color: #1DA1F2;
+}
+
+.social .so-icon:hover{
+	background-color: #0f1873;
+}
+/*Display All List inline Block*/
+.social li, .footer-option ul li {
+	display: inline-block;
+}
+
+/*Footer Content */
+
+.footer-content{
+	width: 90%;
+	margin: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+/*Top Service Opteion - AND - Company Address info contect*/
+.footer-content .footer-part{
+	width: 100%;
+	position: relative;
+	/*display: inline-block;*/
+    height: auto;
+	align-content:center;
+	align-self: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer-option{
+	width: 24.5%;
+	display: inline-block;
+	position: relative;
+}
+
+.footer-option h4{
+	color: #fff;
+	font-style: bold;
+	margin: 12px 0px 12px 0px;
+	padding-left: 8px;
+	border-left: 8px solid #00bcd4;
+	display: block;
+}
+/*
+.footer-option h4::before{
+	  margin-top: 20px;
+	  content: "";
+	  position: absolute;
+	  height: 4px;
+	  width: 40px;
+	  background: #ff5e14;
+}
+*/
+.footer-option ul li{
+	width: 100%;
+	margin: 6px 0px 6px 0px;
+	padding: 4px;
+}
+
+/*Footer About | Contact */
+
+.footer-part .sub-part{
+	width: 50%;
+    align-items: center;
+}
+
+.footer-part .sub-part{
+	display: inline-flex;
+}
+.footer-part .footer-about{
+	display: block;
+}
+
+/*
+.footer-about .about{
+	width: 80%;
+}*/
+
+
+.sub-part span{
+	color: white;
+	font-weight: bolder;
+}
+.sub-part p{
+	font-size: 16px;
+	/*padding: 2px;*/
+	margin: 10px;
+}
+.sub-part .logo{
+	width: 54px;
+	float: left;
+	margin: 10px 10px 0px 0px;
+	padding: 0px;
+}
+
+/*About */
+.sub-part a img{
+	width: 100%;
+	height: auto;
+}
+
+.sub-part .address, .sub-part .contact{
+	/* display: inline-flex; */
+	width: 49.5%;
+	height: auto;
+	margin: 0px;
+}
+
+#footer-address img{
+	width: 24px;
+	height: fit-content;
+	filter: invert(1);
+	vertical-align: middle;
+}
+
+#footer-address::before{
+	 content: "";
+	  position: absolute;
+	  left: 49%;
+	  top: 10%;
+	  bottom: 10%;
+	  height: 80%;
+	  width: 1px;
+	  background: #fff;
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+	width: 100%;
+	display: inline-flex;
+}
+
+.bottom-left{
+	width: inherit;
+}
+
+.footer-bottom .copyright{	
+	align-self: center;
+	text-align: right;
+	margin: 0px 10px 0px 0px;
+	width: inherit;
+}
+
+.bottom-left li{
+ display: inline-block;
+ margin: 10px 0px 10px 8px;
+ padding-right: 10px;
+ border-right: 1px solid gray;
+}
+
+.bottom-left a, #copyright p{
+	color: #a9a9a9;
+}
+
+.bottom-left #b-l-last{
+	border:none;
+}
+
+/*------------------ Screen Responsive -----------------*/
+
+/* Tablet -------------*/
+
+@media only screen and (max-width: 768px){
+
+
+/*-- Social Media - Start */
+.footer-top{
+	width: 100%;
+	padding: 10px;
+	display: block;
+}
+
+.social{
+	width: 100%;
+}
+
+.social .so-icon{
+	width: auto;
+	display: inline-block;
+}
+/*-- Social Media - END */
+
+.footer-content{
+	width: 100%;
+}
+
+	
+
+	.footer-part .sub-part{
+		width: 100%;
+	}
+
+	#footer-address::before{
+		display: none;
+		 /*content: "";
+		  position: absolute;
+		  left: 49%;
+		  top: 10%;
+		  bottom: 10%;
+		  height: 80%;
+		  width: 1px;
+		  background: #fff;*/
+	}
+
+
+}
+
+
+/* Mobile --------------- */
+@media only screen and (max-width: 425px){
+	.footer-part .footer-option{
+		width: 48%;
+	}
+
+
+/* Footer ---- */
+.footer-part .footer-about{
+	display: block;
+}
+
+/*------ Footer And Copy Right ----*/
+.footer-bottom {
+	width: 100%;
+	display: block;
+}
+
+.bottom-left{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-bottom .copyright{	
+	text-align: center;
+}
+
+}
